@@ -9,10 +9,75 @@ html{
 }
 
 body {
-  background: #000;
+  background: #000000;
   min-height: 100vh;
   overflow-x: hidden;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#Home{
+  margin-bottom: 35vh;
+  position:relative;
+}
 
+#Projects{
+  position: relative;
+}
+
+.heading1{
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 7rem;
+  margin-left: 3rem;
+  font-family: 'Dosis';
+  position: relative;
+  letter-spacing: 0.3rem;
+}
+
+.heading1::before {
+    content: '';
+    position: absolute;
+    width: 11.5rem;
+    height: 0.1rem;
+    top: 110%;
+    left: 0;
+    background-color: #00d5ff;
+}
+
+.heading1::after {
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 0.25rem;
+    top: 109%;
+    left: 0;
+    background-color: #d0ff00;
+}
+
+.card{
+  width: 15rem;
+  height: auto;
+  overflow: hidden;
+  border-radius: 0.3rem;
+  margin-left: 10rem;
+  position: relative;
+}
+
+.card-img1{
+  width: 90%;
+  height: 300px;
+  display: block;
+  border-radius: .3rem;
+  position: relative;
+}
+
+.card-title{
+  color: #d0ff00;
+  font-size: 1.7rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+}
