@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card {
+  width: 20rem;
+  height: 25rem;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 3px solid wheat;
+  position: relative;
+}
+
+/*-- 1st Card --*/
+.card-img
