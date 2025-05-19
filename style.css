@@ -25,10 +25,15 @@ body {
 }
 
 .heading1{
-  color: #ffffff;
+  background-image: linear-gradient(90deg, #ff00d2, #fed90f);
+  background-clip: text;
+  background-size: 100% 100%;
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: calc(2rem / 15);
+  color: #202020;
   font-size: 3rem;
   margin-bottom: 7rem;
-  margin-left: 3rem;
+  margin-left: 11.5rem;
   font-family: 'Dosis';
   position: relative;
   letter-spacing: 0.3rem;
@@ -41,7 +46,7 @@ body {
     height: 0.1rem;
     top: 110%;
     left: 0;
-    background-color: #00d5ff;
+    background: linear-gradient(45deg,#00a2ff, #09f1b8);
 }
 
 .heading1::after {
@@ -51,33 +56,6 @@ body {
     height: 0.25rem;
     top: 109%;
     left: 0;
-    background-color: #d0ff00;
+    background: linear-gradient(45deg, #ff00d2, #fed90f);
 }
 
-.card{
-  width: 15rem;
-  height: auto;
-  overflow: hidden;
-  border-radius: 0.3rem;
-  margin-left: 10rem;
-  position: relative;
-}
-
-.card-img1{
-  width: 90%;
-  height: 300px;
-  display: block;
-  border-radius: .3rem;
-  position: relative;
-}
-
-.card-title{
-  color: #d0ff00;
-  font-size: 1.7rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-
-}
