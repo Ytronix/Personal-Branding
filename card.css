@@ -1,18 +1,144 @@
-.container {
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  margin: 10px;
+.card{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
-.card {
-  width: 20rem;
-  height: 25rem;
-  border-radius: 5px;
-  overflow: hidden;
-  border: 3px solid wheat;
-  position: relative;
+/* Adds right margin to all cards except the last one */
+.card > *:not(:last-child){
+    margin-right: 5rem;
 }
 
-/*-- 1st Card --*/
-.card-img
+/* Target the middle card */
+.card > :nth-child(2){
+    margin-top: 7rem;
+}
+
+.card-body{
+    width: 20rem;
+    height: 25rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    border: 3px solid wheat;
+    position: relative;
+}
+
+/* -- 1st Card -- */
+.card-img1{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 0.3rem;
+}
+
+.card-info_1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;  /* -->This part moves the text to left side */
+    background: #9000ff40;
+    backdrop-filter: blur(0.19rem);
+    border-radius: 0.3rem;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1.5s;
+}
+
+.card-body:hover .card-info_1{
+    left: 0;
+}
+
+/* -- 2nd Card -- */
+.card-img2{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 0.3rem;
+}
+
+.card-info_2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%; /* -->This part moves the text to left side */
+    left: 0;  
+    background: #ffffff40;
+    backdrop-filter: blur(0.19rem);
+    border-radius: 0.3rem;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1.5s;
+}
+
+.card-body:hover .card-info_2{
+    top: 0;
+}
+
+/* -- 3rd Card -- */
+.card-img3{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 0.3rem;
+}
+
+.card-info_3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%; /* -->This part moves the text to left side */
+    right: 0;  
+    background: rgba(27, 128, 252, 0.2);
+    backdrop-filter: blur(0.19rem);
+    border-radius: 0.3rem;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1.5s;
+}
+
+.card-body:hover .card-info_3{
+    bottom: 0;
+}
+
+.card-title{
+    font-size: 2.5rem;
+    font-family: 'pixelify sans', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, red, blue);
+    background-size: 80% 80%;
+    background-clip: text;
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: calc(3rem / 16);
+    color: black;
+}
+
+.card-des{
+    font-size: 1rem;
+    font-family: 'Doppio One', 'Gill Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.4rem;
+    margin: 2.3rem 0;
+}
+
+.card-btn{
+    background: transparent;
+    padding: 0.625rem 0.75rem;
+    border-radius: 0.3rem;
+    border: 0.125rem dotted teal;
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: 500;
+    outline: none;
+}
+
+.card-btn:hover{
+    background: teal;
+}
