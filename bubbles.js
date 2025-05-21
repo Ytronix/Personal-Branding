@@ -1,7 +1,6 @@
 // Create bubbles
         const bubblesContainer = document.querySelector('.bubbles');
-        const colors = ['#FF9AA2', '#FFB7B2', '#FFDAC1', '#7209b7',
-                     '#E2F0CB', '#B5EAD7', '#C7CEEA', '#3A0CA3', '#8A7CFF'];
+        const colors = ['#7209b7', '#3A0CA3', '#8A7CFF', ];
         
         for (let i = 0; i < 25; i++) {
             const bubble = document.createElement('div');

@@ -16,14 +16,55 @@ body {
 }
 
 #Home{
-  margin-bottom: 30vh;
+  margin-bottom: 40vh;
   position:relative;
 }
 
 #Projects{
   position: relative;
+  background: fixed;
 }
 
+/* *CSS for static text stroke*/
+.heading1{
+  width: 10rem;
+  background: white;
+  background-clip: text;
+  background-size: 15%;
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: calc(2rem / 15);
+  color: black;
+  font-size: 3rem;
+  margin-bottom: 7rem;
+  margin-left: 11.5rem;
+  font-family: 'Dosis', 'Gill Sans', 'Trebuchet MS', sans-serif;
+  position: relative;
+  letter-spacing: 0.3rem;
+  text-shadow: 0 0 0.4rem white;
+  transform: translate(0, 20%);
+}
+
+.heading1::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.1rem;
+    top: 110%;
+    left: 0;
+    background: linear-gradient(45deg,#0053c7, #00ffbf);
+}
+
+.heading1::after{
+    content: '';
+    position: absolute;
+    width: 45%;
+    height: 0.25rem;
+    top: 109%;
+    left: 0;
+    background: linear-gradient(45deg, #ff00d2, #fed90f);
+}
+
+/* *CSS for dynamic text stroke 
 svg{
   font-size: 3rem;
   margin-left: 19rem;
@@ -37,10 +78,10 @@ svg{
   overflow: hidden;
 }
 svg text{
-   font-size: clamp(2.5rem, 8vw, 5rem); /* !Scales between 2.5rem and 5rem */
+   font-size: clamp(2.5rem, 8vw, 5rem); /* !Scales between 2.5rem and 5rem 
    fill: black;
-   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.753)); /* **Gold glow */
-   stroke: whitesmoke;
+   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.753)); /* **Gold glow 
+   stroke: aliceblue;
    stroke-linejoin: round;
    stroke-dasharray: 100;
    will-change: stroke-dashoffset;
@@ -53,40 +94,13 @@ svg text{
   }
 }
 
+/* TODO: use this HTML in Project Section for dynamic stroke 
+<svg>
+  <symbol id="text">
+  <text x="50%"  y="50%" text-anchor="middle">Project</text>
+  </symbol>
+  <use xlink:href="#text"/>
+</svg> */
 
-
-/* .heading1{
-  background: white;
-  background-clip: text;
-  background-size: 15%;
-  -webkit-text-stroke-color: transparent;
-  -webkit-text-stroke-width: calc(2rem / 15);
-  color: black;
-  font-size: 3rem;
-  margin-bottom: 7rem;
-  margin-left: 11.5rem;
-  font-family: 'Dosis';
-  position: relative;
-  letter-spacing: 0.3rem;
-}
-
-.heading1::before {
-    content: '';
-    position: absolute;
-    width: 11.5rem;
-    height: 0.1rem;
-    top: 110%;
-    left: 0;
-    background: linear-gradient(45deg,#00a2ff, #09f1b8);
-}
-
-.heading1::after {
-    content: '';
-    position: absolute;
-    width: 4rem;
-    height: 0.25rem;
-    top: 109%;
-    left: 0;
-    background: linear-gradient(45deg, #ff00d2, #fed90f);
-}
-
+/* TODO: use this HTML in Project Section for static stroke
+<h1 class="heading1>Project</h1> */
